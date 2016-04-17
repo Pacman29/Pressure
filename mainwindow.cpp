@@ -138,8 +138,8 @@ double _integr(double a, double b, int n,double (*f)(double, double), double p)
         //qDebug()<<i<<r[i];
     }
     sum*=(b-a)/2;
-    delete []r;
-    delete []mas;
+    delete r;
+    delete mas;
     Gauss_matrix_del_mt(M,n);
 
     return sum;
